@@ -1,4 +1,4 @@
-## WOA7107 Security Risk Analysis and Evaluation Notes (Week 1)
+# WOA7107: Introduction to Security Risk Analysis and Evaluation
 
 **Course Overview:**
 
@@ -11,95 +11,114 @@
 * **Delivery:** First 3 classes online, remainder physical (contact faculty if physical attendance is problematic).
 
 
-**Chapter 1: Introduction to Security Risk Analysis and Evaluation:**
+**Part 1: Foundations of Security Risk Management**
 
-* **Core Purpose:** To establish cost-effective security controls tailored to an organization's specific threats and vulnerabilities, avoiding unnecessary expenditure.
-* **Key Concepts:**
-    * **Good Security vs. Best Security:** Prioritize "good" security that effectively addresses significant threats over the most expensive "best" security.
-    * **Context Matters:** Security controls must be relevant to the specific environment and threat landscape.  Examples: Transparent garbage bags in the UK vs. black bags in Malaysia; parking restrictions near buildings in the US.
-    * **Risk Cannot Be Eliminated:** Security controls mitigate and reduce risk but cannot eliminate it entirely.
+### Chapter 1: Introduction to Security Risk Analysis and Evaluation
 
-**The Role of the Information Security Manager:**
+#### 1.1 Understanding Security Risk
 
-* **Guiding Principles:** CIA Triad (Confidentiality, Integrity, Availability) + AAA (Authentication, Authorization, Accountability).
-* **Key Responsibilities:**
-    1. **Prevent Loss, Fraud, and Data Breaches:** Implement comprehensive security measures.
-    2. **Demonstrate Regulatory Compliance:** Adhere to relevant laws, regulations, and standards (e.g., copyright, data protection).
-    3. **Manage Security Policies:**  Develop, implement, maintain, and **update** security policies based on changing needs and circumstances (e.g., software updates, new threats).
-    4. **Ensure Business Continuity:** Develop and regularly test disaster recovery plans.
-    5. **Plan Incident and Disaster Response:**  Establish procedures for handling incidents, prioritizing diagnosis and escalation before declaring a disaster.
-    6. **Prioritize Security Initiatives:** Focus resources on addressing the most significant risks based on likelihood and potential impact.
+This chapter introduces the fundamental concepts of security risk management, emphasizing the importance of risk analysis and evaluation in protecting organizational assets. We'll explore the role of the Information Security Manager, various approaches to identifying and prioritizing security initiatives, and the distinction between accidents and incidents.  Finally, we'll examine the different types of assets that require protection.
 
-**Approaches to Prioritizing Security Initiatives:**
+#### 1.2 What is Security Risk Management?
 
-1. **Audit-Driven:**  Leverage audit findings to identify weaknesses and prioritize remediation efforts.
-2. **Technology-Driven:**  Utilize new technologies to enhance security. Example:  Biometric authentication instead of staff cards.
-3. **Compliance-Driven:**  Meet regulatory requirements and industry standards.
-4. **Security Risk-Driven:** Base initiatives on thorough risk assessments.
+Security risk management is the ongoing process of identifying, assessing, and mitigating potential threats and vulnerabilities that could harm an organization's assets.  It's a cyclical process that involves continuously evaluating the effectiveness of security controls and adapting to the changing threat landscape.  The goal is not to eliminate all risks, which is often impossible, but to reduce them to an acceptable level based on the organization's business objectives and risk tolerance.
 
-**5W1H Framework:**
+#### 1.3 The Importance of Risk Analysis and Evaluation
 
-* **Who:**  (Involved parties: attackers, users, personnel)
-* **What:**  (Nature of the event: breach, malware, etc.)
-* **When:**  (Time of occurrence)
-* **Where:**  (Location: system, department, physical space)
-* **Why:**  (Motivation/Cause: financial gain, vulnerability)
-* **How:**  (Method used: phishing, malware, social engineering)
+Risk analysis and evaluation are core components of security risk management. They provide a structured approach to:
 
-**Ensuring a Quality Information Security Risk Assessment:**
+* **Identify Assets:** Determine what needs protection (e.g., data, systems, personnel, reputation).
+* **Identify Threats:** Understand the potential dangers (e.g., malware, natural disasters, human error).
+* **Identify Vulnerabilities:** Recognize weaknesses that threats could exploit.
+* **Assess Risks:**  Estimate the likelihood and potential impact of threats exploiting vulnerabilities.
+* **Prioritize Risks:**  Focus on the most significant risks.
+* **Select Cost-Effective Controls:**  Choose security measures that provide the best balance of protection and cost.
+* **Evaluate Control Effectiveness:** Ensure that controls continue to be effective over time.
 
-A high-quality risk assessment is crucial for effective security.  Weaknesses in the assessment can lead to:
+Without thorough risk analysis and evaluation, organizations may overspend on unnecessary controls or, even worse, leave themselves vulnerable to significant threats.
 
-1. **False Conclusions:** Inaccurate understanding of risks.
-2. **Biased Results:**  Influence of personal opinions or inappropriate comparisons.
-3. **Significant Planning Errors:** Ineffective security plans.
-4. **Increased Security Risks:** A false sense of security.
+#### 1.4 The Role of the Information Security Manager
 
-**Security Risk Assessment:**
+The Information Security Manager plays a crucial role in leading and coordinating security risk management efforts.  Their responsibilities are often guided by the CIA Triad and the AAA framework:
 
-* **Definition:**  Determining the probability of asset loss by considering asset value, threat analysis, and the effectiveness of existing controls.
-* **Necessity:** Regular risk assessments are crucial for identifying changing threats, adapting to environmental changes, justifying security spending, and demonstrating due diligence.
-* **Secondary Benefits:**  Knowledge transfer, increased awareness, improved communication, historical data for trend analysis.
+* **CIA Triad:**
+    * **Confidentiality:** Protecting sensitive information from unauthorized disclosure.
+    * **Integrity:** Ensuring the accuracy and completeness of data.
+    * **Availability:**  Guaranteeing reliable access to information and systems.
+* **AAA Framework:**
+    * **Authentication:** Verifying the identity of users and systems.
+    * **Authorization:**  Granting appropriate access privileges.
+    * **Accountability:** Tracking and recording user actions.
 
-**Accident vs. Incident:**
-
-* **Accident:** Unintentional event causing harm or damage.
-* **Incident:** Any event that *might* cause harm or damage, intentional or unintentional.  Incidents are investigated for root cause analysis and improvement.
-
-**Organizational Assets (Org Assets) and Information Assets (Info Assets):**
-
-* **Org Assets:** Physical (buildings, equipment) and non-physical (intellectual property, reputation) resources.
-* **Info Assets:**  Data and information vital to the organization (electronic, paper-based, knowledge-based).  Require appropriate security controls (access control, encryption, backups, etc.).
-
-**Related Activities:**
-
-* **Gap Assessment:**  Comparing security controls to standards and identifying gaps.
-* **Compliance Audit:**  Verifying adherence to mandatory regulations and standards.
-* **Security Audit:**  Assessing the effectiveness of specific security controls.
-* **Vulnerability Scanning:**  Automated tools used to find system weaknesses.
-* **Penetration Testing:**  Simulated attacks to identify system vulnerabilities.
-* **Ad Hoc Testing:**  Expert-driven testing to uncover less obvious vulnerabilities.
-* **Social Engineering:**  Manipulating individuals to gain unauthorized access or information.
+The Information Security Manager also plays a key role in developing and enforcing security policies, ensuring business continuity, planning incident and disaster response, and prioritizing security initiatives.
 
 
-**(Detailed definitions from slides included below)**
+#### 1.5 Approaches to Identifying and Prioritizing Security Initiatives
 
-**Gap Assessment:** Review of security controls against a standard.  Purpose: To identify necessary controls for compliance.
+Several factors can drive security initiatives:
 
-**Compliance Audit:** Verification that required security controls are in place. Purpose: Attest to an organization's compliance with a standard.
-
-**Security Audit:** Verification that specified security controls are implemented according to industry standards. Purpose:  Attest to adherence to industry best practices.
-
-**Penetration Testing:**  Methodical and planned simulated attack. Purpose:  Test the adequacy of existing security controls.
-
-**Vulnerability Scanning:**  Automated search for obvious vulnerabilities in security controls (part of penetration testing). Purpose: Test for known weaknesses.
-
-**Ad Hoc Testing:** Expert-driven search for less obvious vulnerabilities. Purpose:  Uncover vulnerabilities not found through standard testing.
-
-**Social Engineering:** Assessing security training, policies, and procedures by attempting unauthorized access through human interaction. Purpose: Gauge vulnerability to social engineering tactics.
+* **Audit Findings:** Audits can reveal weaknesses in existing controls and provide recommendations for improvement.
+* **Technological Advancements:**  New technologies can offer better security solutions or address emerging threats.  Example: Replacing a staff card system with biometrics.
+* **Compliance Requirements:**  Laws, regulations, and industry standards can mandate specific security controls. Example: Implementing data encryption to comply with data protection regulations.
+* **Risk Assessments:**  Risk analysis helps identify the most significant threats and vulnerabilities, which then informs the prioritization of security initiatives.
 
 
-**Conclusion:**
+#### 1.6 Accidents vs. Incidents
 
-Security risk analysis and evaluation are essential for effective security management.  The Information Security Manager has a crucial role in implementing and managing security initiatives based on sound risk assessments and a comprehensive understanding of the organization's specific threat landscape.  Continuous monitoring and improvement are vital for maintaining a strong security posture.
+* **Accident:** An unintended, unforeseen, and unexpected event that results in loss or damage.
+* **Incident:** An unplanned event that *may* compromise security.  It can be intentional (e.g., a cyberattack) or unintentional (e.g., a user accidentally deleting important data). Incidents that don't cause damage are often referred to as "near misses" and are still valuable for learning and improvement.
 
+#### 1.7 Organizational Assets vs. Information Assets
+
+* **Organizational Assets:**  These are the resources owned or controlled by an organization that have value.  They can be tangible (buildings, equipment) or intangible (reputation, intellectual property).
+* **Information Assets:**  This is a subset of organizational assets and specifically refers to information valuable to the organization. This includes data in electronic form (databases, files), physical form (documents, printouts), or even knowledge residing with personnel.
+
+### Chapter 2: Risk Assessment Methodologies
+
+#### 2.1  Quantitative vs. Qualitative Analysis
+
+Risk assessment methodologies are broadly categorized as quantitative or qualitative, each with its own approach to determining risk levels.  Choosing the right method depends on factors like the availability of data, the organization's resources, and the desired level of precision.
+
+* **Quantitative Analysis:**  This approach uses numerical data and formulas to calculate risk, aiming to assign a monetary value to potential losses. This allows for a more objective comparison of different risks and facilitates cost-benefit analysis of security controls. Key metrics and calculations in quantitative analysis include:
+
+    * **Asset Value (AV):**  The monetary value of the asset being assessed. This can include the cost of replacement or repair, the lost revenue during downtime, or the cost of reputational damage.
+    * **Exposure Factor (EF):** The percentage of the asset's value that is likely to be lost in a single incident. For example, if a fire is expected to destroy 50% of a warehouse, the EF is 0.5.
+    * **Single Loss Expectancy (SLE):** AV x EF = The expected monetary loss from a single occurrence of a risk event.
+    * **Annualized Rate of Occurrence (ARO):** The estimated frequency with which a threat is likely to occur in a year.  This can be based on historical data, industry averages, or expert judgment.
+    * **Annualized Loss Expectancy (ALE):** SLE x ARO = The expected annual financial loss due to a specific risk.  This is a key metric for prioritizing risks and justifying security investments.
+    * **Safeguard Value:**  The expected reduction in ALE after implementing a safeguard, minus the annual cost of the safeguard.  A positive safeguard value indicates a cost-effective control.  This is calculated as:  `(ALE before safeguard - ALE after safeguard) - Annual Cost of Safeguard`.
+
+* **Qualitative Analysis:** This approach uses subjective judgment, descriptive terms (e.g., high, medium, low), and scenarios to assess risk. It relies on the expertise and experience of the assessment team and stakeholders.  Qualitative analysis is often used when precise numerical data is unavailable or when the organization prefers a more narrative approach to risk assessment.  While less precise than quantitative analysis, it can be more flexible and adaptable to different situations. Methods often involve rating threats, vulnerabilities, and impacts on scales (e.g., 1-5 or Low-Medium-High). Risk matrices are commonly used to combine likelihood and impact ratings to determine overall risk levels.
+
+
+#### 2.2 Expected Loss and Probability
+
+Expected loss is a crucial concept in quantitative risk assessment.  It calculates the average loss an organization can anticipate over time due to a specific risk.  This involves considering the probability of different outcomes and the associated losses for each outcome.  Expected loss is directly related to SLE and ALE:
+
+* **Single Loss Expectancy (SLE):** Represents the expected financial loss from a *single* occurrence of a risk event. It is a fundamental component of calculating ALE.
+* **Annualized Loss Expectancy (ALE):** Extends the concept of SLE by considering the frequency with which the risk event is expected to occur annually (ARO). This provides a more realistic estimate of the potential financial impact over time.
+
+**Example (from slide Note 13):**
+
+Imagine a scenario where you are flipping a coin with a friend. If it lands on heads, you win RM1; if it lands on tails, you win RM2.50.  From your friend's perspective (who is losing the money), the expected loss for a single flip is:
+
+* Expected Loss = (Probability of Heads x Loss for Heads) + (Probability of Tails x Loss for Tails)
+* Expected Loss = (0.5 x RM1) + (0.5 x RM2.50) = RM1.75
+
+This simple example illustrates how probability and potential losses are combined to determine the expected loss.  In real-world security risk assessments, these probabilities and losses relate to specific threats and vulnerabilities impacting organizational assets.
+
+#### 2.3 Overview of Risk Assessment Methods
+
+Many standardized risk assessment methodologies provide frameworks and structured approaches. Each has its own strengths and weaknesses, making it suitable for different organizations and situations.  Here's a high-level overview of some common methods:
+
+* **NIST SP 800-30 (National Institute of Standards and Technology):** A widely used, comprehensive risk assessment framework that provides step-by-step guidance for conducting risk assessments.  It's adaptable to various organizations and information systems.  It emphasizes a cyclical approach of risk assessment, risk mitigation, and ongoing monitoring.
+
+* **OCTAVE (Operationally Critical Threat, Asset, and Vulnerability Evaluation):** A self-directed risk assessment methodology that focuses on organizational risk, emphasizing stakeholder involvement and self-assessment.  It's particularly well-suited for organizations that want to build internal risk management capabilities.
+
+* **FRAP (Facilitated Risk Analysis Process):**  A qualitative methodology that utilizes workshops and facilitated sessions to identify and assess risks. It's known for its collaborative approach and its focus on understanding the organization's unique context.
+
+* **CRAMM (CCTA Risk Analysis and Management Method):** A structured, semi-quantitative method developed by the UK government.  It provides a detailed framework for assessing risks to information systems and selecting appropriate controls.
+
+* **Other Methods:**  Numerous other methodologies exist, including those specific to certain industries or regulations (e.g., HIPAA for healthcare, PCI DSS for payment card industry).
+
+**(Further details about these methodologies, including their specific steps, advantages, and disadvantages, will be covered in a later chapter.)**
